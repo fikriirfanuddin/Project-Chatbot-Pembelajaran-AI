@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Class dan Object Itu Apa?</title>
+  </head>
+  <body style="padding-top: 40px">
+    <!--Keterangan navbar menu-menu-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary shadow-lg fixed-top"
+    >
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png"
+            width="50"
+            height="50"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chatbot.html">Chatbot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="materi.html">Materi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="petunjuk.html">Petunjuk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Tentang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Kontainer untuk menu kembali ke home-->
+    <div
+      class="container materi mt-5 p-8 text-dark text-left font-family: 'sans serif'"
+    >
+      <p>
+        <a href="index.html">Beranda</a> &gt;
+        <a href="materi.html">Materi</a> &gt; Class dan Object Itu Apa?
+      </p>
+    </div>
+    <!-- Kontainer untuk judul halaman -->
+    <div
+      class="container materichatbot1 mt-5 p-8 text-dark text-left font-family: 'sans serif'"
+    >
+      <h1 class="display-10 teksalgoritma text-center text-light">
+        Class dan Object Itu Apa?
+      </h1>
+      <h5 style="color: #797878; font-family: 'Poppins'">
+        <br />
+        <br />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvLSRVVFtM7qI5BzPCpUzevR9GUtGwOOHBvQ&usqp=CAU"
+          style="display: block; margin: 0 auto"
+        />
+        />
+        <br />
+        <br />
+        PBO atau Pemrograman Berorientasi Object menjadi salah satu paradigma
+        yang diterapkan hampir di seluruh bahasa pemrograman.
+        <br />
+        <br />
+        <b>Kok bisa? Bagaimana konsepnya ?</b>
+        <br />
+        <br />
+        Konsep dasar dari PBO adalah mengumpulkan data dan fungsi yang memiliki
+        hubungan kedalam suatu pulau informasi. Pulau ini disebut dengan object.
+        Jika dibandingkan dengan bahasa pemrograman prosedural, PBO akan melihat
+        suatu masalah secara keseluruhan.
+        <br />
+        <br />
+        Dalam PBO, alih-alih berurusan dengan data secara langsung PBO akan
+        memahami data mana yang akan digunakan dengan cara melakukan modeling.
+        Untuk melakukan modeling ini ada beberapa istilah yang perlu dipahami
+        yaitu class dan object.
+        <br />
+        <br />
+        Tipe data python merupakan komponen yang berfugsi untuk memberikan
+        keterangan data yang diproses dalam bahasa python.
+        <br />
+        <b>Apa itu Class dan Object ?</b>
+        <br />
+        <br />
+        Class merupakan sebuah blueprint dari object yang akan kita buat. Class
+        berarti cetakannya object (instance) adalah hasil dari cetakan tersebut.
+        <br />
+        <br />
+        <img
+          src="gambar/Classobjectt.png"
+          style="display: block; margin: 0 auto"
+        />
+        <br />
+        <br />
+        Contoh pembuatan class sebuah Dog :
+        <br />
+        <br />
+        <img src="gambar/classdog.png" style="display: block; margin: 0 auto" />
+        <br />
+        <br />
+        <b>Apa itu method_init_ ?</b>
+        <br />
+        <br />
+        Fungsi yang berada dalam sebuah class dinamakan dengan method. Semua
+        aturan fungsi yang sudah kita pelajari di bab sebelumnya berlaku juga
+        pada pembuatan method. Jika kita lihat pada baris ke-2 terdapat method
+        __init__, method ini merupakan spesial method yang secara otomatis akan
+        berjalan setiap kali object/instance dari class Dog dibuat.
+        <br />
+        <br />
+        Penulisan method ini diawali dengan dua kali underscore ( _ ) dan
+        diakhiri juga dengan dua kali underscore ( _ ).
+        <br />
+        <br />
+        <b>Apa itu Parameter self ?</b>
+        <br />
+        <br />
+        Pada method __init__ terdapat tiga parameter yaitu self, nama dan umur.
+        Parameter self merupakan sebuah parameter yang harus ada didalam
+        pembuatan method, dan harus ditulis di awal sebelum parameter lainnya.
+        Jika kita lihat pada method duduk dan berdiri, parameter self harus
+        ditulis walaupun tidak ada parameter lain di dalam method tersebut.
+        Parameter self ini berfungsi untuk mendapatkan akses secara internal
+        terhadap atribut atau method didalam sebuah class saat kita membuat
+        objeck/instance.
+        <br />
+        <br />
+        Artikel ini berdasarkan modul Class dan Object. Pelajari selengkapnya di
+        bawah ini.
+        <br />
+        <br />
+        <iframe
+          src="https://docs.google.com/document/d/1dnnXKqO34ibRBi8ZPl115ALEllDn70Z-FBonPqrCeII/edit?usp=sharing"
+          width="100%"
+          height="600px"
+        ></iframe>
+      </h5>
+    </div>
+    <br />
+    <div
+      style="display: flex; justify-content: space-between; align-items: center"
+    >
+      <a
+        href="operasifilepython.html"
+        style="
+          color: rgb(0, 0, 0);
+          font-size: 25px;
+          text-decoration: none; /* Menghilangkan garis bawah */
+          transition: transform 0.3s; /* Animasi saat diklik */
+          margin-top: 5px;
+          padding-left: 100px;
+        "
+        onmousedown="this.style.transform='scale(0.95)'"
+        onmouseup="this.style.transform='scale(1)'"
+        ontouchstart="this.style.transform='scale(0.95)'"
+        ontouchend="this.style.transform='scale(1)'"
+      >
+        &#11164; Operasi File Pada Python Itu Apa?
+      </a>
+      <a
+        href="inheritence.html"
+        style="
+          color: rgb(0, 0, 0);
+          font-size: 25px;
+          text-decoration: none; /* Menghilangkan garis bawah */
+          transition: transform 0.3s; /* Animasi saat diklik */
+          margin-top: 5px;
+          padding-right: 100px;
+        "
+        onmousedown="this.style.transform='scale(0.95)'"
+        onmouseup="this.style.transform='scale(1)'"
+        ontouchstart="this.style.transform='scale(0.95)'"
+        ontouchend="this.style.transform='scale(1)'"
+      >
+        Inheritance (Pewarisan) Itu Apa? &#11166;
+      </a>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2023 ALPRO-BOT | Pendidikan Teknik Informatika | UMS</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

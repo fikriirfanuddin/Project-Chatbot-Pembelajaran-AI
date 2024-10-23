@@ -1,0 +1,282 @@
+/* tampilan bagian menu utama beranda */
+.banner {
+  background: url("https://img.freepik.com/premium-vector/blue-background-with-blue-background-blue-background-design_594699-153.jpg")
+    no-repeat center center;
+  background-size: cover;
+  padding-top: 10%; /* Adjust as needed */
+  padding-bottom: 10%; /* Adjust as needed */
+  color: #fff;
+  animation: fadeIn 2s ease-out;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+/* animasi berbentuk fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(20);
+  }
+}
+
+/*animasi berbentuk fadInUP*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*animasi pada menu info*/
+.info {
+  animation: fadeInUp 1s ease-out;
+}
+
+/*animasi pada menu chatbot kedua*/
+.materichatbot1 {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.getcody {
+  animation: fadeInUp 1s ease-out;
+}
+
+/*animasi fadeinup pada menu awal chatbot1*/
+.chatbot1 {
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  color: #000000;
+  overflow: hidden;
+}
+.chatbot1.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*animasi fadeinup pada menu awal materi1*/
+.materi1 {
+  opacity: 0;
+  transform: translateY(50px);
+  visibility: hidden;
+  transition: opacity 1s ease-out, transform 1s ease-out, visibility 0s 1s;
+}
+
+.materi1.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/*animasi fadeinup pada menu awal materi1*/
+.petunjuk1 {
+  opacity: 0;
+  transform: translateY(50px);
+  visibility: hidden;
+  transition: opacity 1s ease-out, transform 1s ease-out, visibility 0s 1s;
+}
+
+.petunjuk1.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/*tampilan lingkaran info chatbot awal*/
+.lingkaran {
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  color: #fff;
+  background-color: blue;
+}
+
+.lingkaran i {
+  position: relative;
+  top: 35px;
+}
+
+/*bagian menu materi*/
+.card-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.crop-img {
+  overflow: hidden;
+}
+
+.crop-img img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.crop-img:hover img {
+  transform: scale(1.1);
+}
+
+.crop-imwg {
+  object-fit: cover;
+}
+
+.isimateri1 {
+  animation: fadeInUp 1s ease-out;
+}
+
+.card {
+  width: 18rem;
+  height: 100%;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Properti untuk shadow */
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Efek saat kursor diarahkan ke elemen */
+}
+
+.card img {
+  width: 100%;
+  height: 100%; /* Set tinggi gambar sesuai kebutuhan */
+  object-fit: cover; /* Membuat gambar tetap proporsional di dalam kotak */
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.custom-link {
+  color: inherit; /* Menurunkan warna dari parent element */
+  text-decoration: none; /* Menghilangkan efek underline */
+}
+
+.custom-link:hover {
+  color: inherit; /* Warna pada hover tetap sama dengan warna normal */
+}
+
+/*bagian menu petunjuk*/
+.instruction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.instruction-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.instruction-text {
+  max-width: 60%;
+  padding-right: 20px;
+  font-size: 18px;
+  color: #797878;
+  font-family: "Poppins";
+}
+
+.instruction-image {
+  max-width: 30%;
+  height: auto;
+}
+
+/* Additional styles for better responsiveness */
+.instruction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.instruction-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.instruction-text {
+  max-width: 60%;
+  padding-right: 20px;
+  font-size: 18px;
+  color: #797878;
+  font-family: "Poppins";
+  text-align: left;
+}
+
+.instruction-image {
+  width: 40%;
+  height: auto;
+  border: 2px solid #797878;
+}
+
+/*bagian menu tentang*/
+.container.tentang12 .row .col-md-6.d-flex.align-items-center {
+  margin-bottom: 20px;
+}
+.container.tentang12 .row .col-md-6 img {
+  margin-right: 20px; /* Sesuaikan nilai margin sesuai kebutuhan */
+}
+
+/*bagian menu teksalgoritma*/
+.teksalgoritma {
+  background-color: rgb(40, 113, 248);
+  padding: 50px;
+}
+
+.h5 {
+  font-size: 18px; /* Sesuaikan dengan ukuran yang diinginkan */
+  max-width: 800px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+  margin: 0 auto; /* Memberikan margin otomatis di sekitar elemen h5 */
+  text-align: justify; /* Menyusun teks rata kiri-kanan */
+}
+
+/*bagian footer awal*/
+.footer {
+  background-color: rgb(40, 113, 248);
+  color: #fff;
+  padding: 2px;
+  text-align: center;
+}
+
+.tentang12 {
+  animation: fadeInUp 1s ease-out;
+}
+/*footer di menu tentang*/
+.footer2 {
+  background-color: rgb(40, 113, 248);
+  color: #fff;
+  padding: 2px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
